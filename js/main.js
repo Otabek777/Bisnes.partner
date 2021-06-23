@@ -5,7 +5,14 @@ $(document).ready(function(){
              $('html, body').animate({scrollTop: $(target).offset().top}, 800);
              return false; 
         }); 
-     });
+    });
+    $(window).scroll(function(){
+        if ( $(this).scrollTop() > 100) {
+            $('.header').addClass('fixed')
+        } else {
+            $('.header').removeClass('fixed');
+        }
+    });
     
     var time = 2,
     cc = 1;
@@ -31,3 +38,9 @@ $(document).ready(function(){
     };
 });
 
+const accordeon = document.querySelectorAll(".answers");
+for(let i = 0; i < accordeon.length; i++) {
+    accordeon[i].addEventListener('click', function() {
+        this.classList.toggle('active');
+    });
+}
