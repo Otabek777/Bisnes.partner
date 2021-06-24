@@ -44,3 +44,8 @@ for(let i = 0; i < accordeon.length; i++) {
         this.classList.toggle('active');
     });
 }
+
+document.querySelector('.borgir').addEventListener('click', function () {
+    this.classList.toggle('active')
+    document.querySelector('.header').classList.toggle('left');
+});
