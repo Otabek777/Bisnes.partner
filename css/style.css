@@ -1494,6 +1494,15 @@ ul, ol {
   .header__mobile .logo img {
     width: 86px; }
   .header__mobile .phone_icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     width: 30px;
     height: 30px;
     background: -webkit-linear-gradient(315deg, #9BCDFF 0%, #0FE78D 100.17%);
@@ -1503,3 +1512,7 @@ ul, ol {
     -webkit-transform: rotate(135deg);
     -ms-transform: rotate(135deg);
     transform: rotate(135deg); }
+    .header__mobile .phone_icon img {
+      -webkit-transform: rotate(-135deg);
+      -ms-transform: rotate(-135deg);
+      transform: rotate(-135deg); }
