@@ -4,6 +4,7 @@
         height: 86px;
     }
     .banner.topbanner {
+        height: auto;
         padding-top: 86px;
     }
     .header__logo {
@@ -52,6 +53,7 @@
     }
     .topbanner .banner__left img.bg {
         width: 100%;
+        right: 0;
     }
     .header__phone {
         width: 100%;
@@ -80,6 +82,7 @@
         margin-bottom: 24px;
     }
     .topbanner .banner__left .btn2 {
+        max-width: 100%;
         margin-top: 32px;
     }
     .numbers__box {
@@ -180,6 +183,7 @@
         font-weight: bold;
         font-size: 50px;
         line-height: 65px;
+        padding-left: 0;
     }
     .seven__num p {
         font-weight: normal;
@@ -200,6 +204,7 @@
         margin-bottom: 30px;
     }
     .tariff__option1, .tariff__option2, .tariff__option3 {
+        width: 100%;
         padding-top: 17px;
         background: #fff;
         border: 1px solid #E7F0F1;
