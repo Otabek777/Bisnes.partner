@@ -201,7 +201,7 @@ ul,ol {
 //------------------------- Main
 // banner
 .banner.topbanner {
-    height: 900px;
+    height: 650px;
 }
 .banner {
     display: flex;
@@ -258,8 +258,8 @@ ul,ol {
     overflow: hidden;
     position: relative;
     img {
-        width: auto;
-        height: 100%;
+        width: 100%;
+        height: auto;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -534,7 +534,7 @@ ul,ol {
     span.number {
         position: absolute;
         top: 80px;
-        left: 230px;
+        left: 240px;
         z-index: 5;
         font-weight: bold;
         font-size: 100px;
@@ -1020,6 +1020,10 @@ ul,ol {
         line-height: 31px;
         color: #fff;
         cursor: pointer;
+        transition: all.3s ease;
+    }
+    .tariff__btn:hover {
+        background-color: #086972;
     }
 }
 .tariff__option1:hover {

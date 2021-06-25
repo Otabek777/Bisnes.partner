@@ -191,7 +191,7 @@ ul, ol {
   width: 120px; }
 
 .banner.topbanner {
-  height: 900px; }
+  height: 650px; }
 
 .banner {
   display: -webkit-box;
@@ -246,8 +246,8 @@ ul, ol {
   overflow: hidden;
   position: relative; }
   .banner__right img {
-    width: auto;
-    height: 100%;
+    width: 100%;
+    height: auto;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -551,7 +551,7 @@ ul, ol {
 .slider span.number {
   position: absolute;
   top: 80px;
-  left: 230px;
+  left: 240px;
   z-index: 5;
   font-weight: bold;
   font-size: 100px;
@@ -1053,7 +1053,12 @@ ul, ol {
     font-size: 24px;
     line-height: 31px;
     color: #fff;
-    cursor: pointer; }
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+  .tariff__option2 .tariff__btn:hover {
+    background-color: #086972; }
 
 .tariff__option1:hover {
   -webkit-box-shadow: 0px 18px 28px rgba(9, 30, 66, 0.15), 0px 0px 1px rgba(9, 30, 66, 0.31);
