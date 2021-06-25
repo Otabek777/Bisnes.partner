@@ -12,6 +12,7 @@ $font: "", sans-serif;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap');
 
 :focus {
     outline: none;
@@ -343,6 +344,27 @@ ul,ol {
     .back {
         background-color: #fff;
         transform: rotateY(180deg);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        h5 {
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 41px;
+            text-align: center;
+            // margin-bottom: 16px;
+        }
+        span {
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 26px;
+            text-align: center;
+            margin-bottom: 42px;
+        }
+        .btn {
+            width: 270px;
+            margin: 0 auto;
+        }
     }
     h5 {
         font-weight: bold;
@@ -613,6 +635,7 @@ ul,ol {
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%) rotate(45deg);
+            font-family: 'Roboto', sans-serif;
         }
         li:nth-child(2):after {
             content: "2";
@@ -624,6 +647,7 @@ ul,ol {
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%) rotate(45deg);
+            font-family: 'Roboto', sans-serif;
         }
         li:nth-child(3):after {
             content: "3";
@@ -635,6 +659,7 @@ ul,ol {
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%) rotate(45deg);
+            font-family: 'Roboto', sans-serif;
         }
         li:nth-child(4):after {
             content: "4";
@@ -646,6 +671,7 @@ ul,ol {
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%) rotate(45deg);
+            font-family: 'Roboto', sans-serif;
         }
         li:nth-child(5):after {
             content: "5";
@@ -657,6 +683,7 @@ ul,ol {
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%) rotate(45deg);
+            font-family: 'Roboto', sans-serif;
         }
         li:nth-child(6):after {
             content: "6";
@@ -668,6 +695,7 @@ ul,ol {
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%) rotate(45deg);
+            font-family: 'Roboto', sans-serif;
         }
         li.slick-active {
             opacity: 1;
@@ -723,7 +751,7 @@ ul,ol {
         display: block;
         font-weight: bold;
         font-size: 100px;
-        line-height: 129px;
+        line-height: 120px;
         color: #17B978;
         margin-right: 30px;
         padding-left: 12px;
@@ -1206,6 +1234,13 @@ ul,ol {
     position: relative;
     margin-top: 8px;
     cursor: pointer;
+    transition: all.3s ease;
+}
+.answers__open:hover {
+    border-color: #086972;
+}
+.answers.active .answers__open {
+    border-color: #086972;
 }
 .answers__open::after {
     content: "";
@@ -1217,6 +1252,7 @@ ul,ol {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    transition: all.3s ease;
 }
 .answers__open::before {
     content: "";
@@ -1230,7 +1266,12 @@ ul,ol {
     transform: translate(-50%, -50%);
     transition: all.3s ease;
 }
-
+.answers__open:hover::after, .answers__open:hover::before {
+    background-color: #086972;
+}
+.answers.active .answers__open::after, .answers.active .answers__open::before {
+    background-color: #086972;
+}
 .answers__block {
     max-height: 0;
     overflow: hidden;
