@@ -573,10 +573,13 @@ ul, ol {
   width: auto;
   height: 100%; }
 
+.slider .num_pos {
+  position: relative; }
+
 .slider span.number {
   position: absolute;
-  top: 80px;
-  left: 240px;
+  top: -20px;
+  left: -100px;
   z-index: 5;
   font-weight: bold;
   font-size: 100px;
