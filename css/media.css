@@ -1,3 +1,9 @@
+@media screen and (max-width: 1700px) {
+    .seven::after {
+        width: 750px;
+    }
+}
+
 @media screen and (max-width: 1000px) {
     .header__mobile {
         display: flex;
